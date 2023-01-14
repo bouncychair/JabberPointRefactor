@@ -118,7 +118,7 @@ public class MenuController extends MenuBar {
 			public void actionPerformed(ActionEvent actionEvent) {
 				String pageNumberStr = JOptionPane.showInputDialog((Object) MenuControlStatic.PAGENR);
 				int pageNumber = Integer.parseInt(pageNumberStr);
-				if(presentation.getSlideNumber() < presentation.getSize()){
+				if(pageNumber < presentation.getSize() + 1){
 					presentation.setSlideNumber(pageNumber - 1);
 				}
 			}
