@@ -1,9 +1,5 @@
 public class XMLStatic {
     /**
-     * Default API to use.
-     */
-    protected static final String DEFAULT_API_TO_USE = "dom";
-    /**
      * Names of xml tags of attributes
      */
     protected static final String SHOWTITLE = "showtitle";

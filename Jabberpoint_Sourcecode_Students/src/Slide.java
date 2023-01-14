@@ -24,7 +24,7 @@ public class Slide {
 	}
 
 	//Add a SlideItem
-	public void append(SlideItem anItem) {
+	public void addSlideItem(SlideItem anItem) {
 		items.addElement(anItem);
 	}
 
@@ -40,12 +40,7 @@ public class Slide {
 
 	//Create a TextItem out of a String and add the TextItem
 	public void append(int level, String message) {
-		append(new TextItem(level, message));
-	}
-
-	//Returns the SlideItem
-	public SlideItem getSlideItem(int number) {
-		return items.elementAt(number);
+		addSlideItem(new TextItem(level, message));
 	}
 
 	//Return all the SlideItems in a vector

@@ -82,11 +82,11 @@ public class XMLAccessor implements Accessor {
 		}
 		String type = attributes.getNamedItem(XMLStatic.KIND).getTextContent();
 		if (XMLStatic.TEXT.equals(type)) {
-			slide.append(new TextItem(level, item.getTextContent()));
+			slide.addSlideItem(new TextItem(level, item.getTextContent()));
 		}
 		else {
 			if (XMLStatic.IMAGE.equals(type)) {
-				slide.append(new BitmapItem(level, item.getTextContent()));
+				slide.addSlideItem(new BitmapItem(level, item.getTextContent()));
 			}
 			else {
 				System.err.println(XMLStatic.UNKNOWNTYPE);

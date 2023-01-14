@@ -15,7 +15,7 @@ import java.io.IOException;
 
 public interface Accessor {
 
-	public static Accessor getDemoAccessor() {
+	static Accessor getDemoAccessor() {
 		return new DemoPresentation();
 	}
 
