@@ -40,11 +40,6 @@ public class BitmapItem extends SlideItem {
 		}
 	}
 
-	//An empty bitmap item
-	public BitmapItem() {
-		this(0, null);
-	}
-
 	//Returns the filename of the image
 	public String getName() {
 		return imageName;

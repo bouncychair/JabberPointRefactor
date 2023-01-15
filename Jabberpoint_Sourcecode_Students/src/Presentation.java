@@ -50,19 +50,17 @@ public class Presentation {
 		return currentSlideNumber;
 	}
 
-	//Change the current slide number and report it the the window
-	public void setSlideNumber(int number) {
-		currentSlideNumber = number;
-		if (slideViewComponent != null) {
-			slideViewComponent.update(this, getCurrentSlide());
-		}
+	//Remove the presentation
+	void clear() {
+		showList = new ArrayList<>();
+		setSlideNumber(-1);
 	}
 
 	//Navigate to the previous slide unless we are at the first slide
 	public void prevSlide() {
 		if (currentSlideNumber > 0) {
 			setSlideNumber(currentSlideNumber - 1);
-	    }
+		}
 	}
 
 	//Navigate to the next slide unless we are at the last slide
@@ -72,13 +70,14 @@ public class Presentation {
 		}
 	}
 
-	//Remove the presentation
-	void clear() {
-		showList = new ArrayList<>();
-		setSlideNumber(-1);
+	//Change the current slide number and report it the the window
+	public void setSlideNumber(int number) {
+		currentSlideNumber = number;
+		if (slideViewComponent != null) {
+			slideViewComponent.update(this, getCurrentSlide());
+		}
 	}
 
-	//Add a slide to the presentation
 	public void append(Slide slide) {
 		showList.add(slide);
 	}
