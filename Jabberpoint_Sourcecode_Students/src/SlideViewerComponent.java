@@ -21,6 +21,7 @@ public class SlideViewerComponent extends JComponent {
 	private Slide slide; //The current slide
 	private Font labelFont = null; //The font for labels
 	private Presentation presentation = null; //The presentation
+	//private PresentationControl presentationControl = null;
 	private JFrame frame = null;
 
 

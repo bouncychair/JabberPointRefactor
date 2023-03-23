@@ -45,7 +45,7 @@ public class Presentation {
 		this.slideViewComponent = slideViewerComponent;
 	}
 
-	//Returns the number of the current slide
+	//Returns the number of the current slide -----------------------------------------------------STARTING FROM HERE----------------------------------
 	public int getSlideNumber() {
 		return currentSlideNumber;
 	}

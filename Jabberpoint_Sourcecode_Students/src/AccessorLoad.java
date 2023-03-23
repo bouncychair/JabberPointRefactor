@@ -13,14 +13,11 @@ import java.io.IOException;
  * @version 1.6 2014/05/16 Sylvia Stuurman
  */
 
-public interface Accessor {
+public interface AccessorLoad {
 
-	static Accessor getDemoAccessor() {
+	static AccessorLoad getDemoAccessor() {
 		return new DemoPresentation();
 	}
 
 	void loadFile(Presentation p, String fn) throws IOException;
-
-	void saveFile(Presentation p, String fn) throws IOException;
-
 }

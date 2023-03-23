@@ -45,9 +45,9 @@ public class MenuController extends MenuBar {
 		menuItem.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent actionEvent) {
 					presentation.clear();
-					Accessor xmlAccessor = new XMLAccessor();
+					AccessorLoad xmlAccessorLoad = new XMLAccessorLoad();
 					try {
-						xmlAccessor.loadFile(presentation, MenuControlStatic.TESTFILE);
+						xmlAccessorLoad.loadFile(presentation, MenuControlStatic.TESTFILE);
 						presentation.setSlideNumber(0);
 					} catch (IOException exc) {
 						JOptionPane.showMessageDialog(parent, MenuControlStatic.IOEX + exc,
@@ -72,9 +72,9 @@ public class MenuController extends MenuBar {
 		fileMenu.add(menuItem = mkMenuItem(MenuControlStatic.SAVE));
 		menuItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Accessor xmlAccessor = new XMLAccessor();
+				AccessorSave xmlAccessorSave = new XMLAccessorSave();
 				try {
-					xmlAccessor.saveFile(presentation, MenuControlStatic.SAVEFILE);
+					xmlAccessorSave.saveFile(presentation, MenuControlStatic.SAVEFILE);
 				} catch (IOException exc) {
 					JOptionPane.showMessageDialog(parent, MenuControlStatic.IOEX + exc,
 							MenuControlStatic.SAVEERR, JOptionPane.ERROR_MESSAGE);
