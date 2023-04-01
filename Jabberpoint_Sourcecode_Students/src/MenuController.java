@@ -19,16 +19,16 @@ import javax.swing.*;
  */
 public class MenuController extends MenuBar {
 
+	private final SlideViewerComponent slideViewerComponent;
 	private Frame parent; //The frame, only used as parent for the Dialogs
-	private Presentation presentation; //Commands are given to the presentation
 	private MenuItem menuItem;
 	private Menu fileMenu = new Menu(MenuControlStatic.FILE);
 	private Menu viewMenu = new Menu(MenuControlStatic.VIEW);
 	private Menu helpMenu = new Menu(MenuControlStatic.HELP);
 
-	public MenuController(Frame frame, Presentation pres) {
+	public MenuController(Frame frame, SlideViewerComponent slideViewerComponent) {
 		parent = frame;
-		presentation = pres;
+		this.slideViewerComponent = slideViewerComponent;
 		add(fileMenu);
 		loadPresentation();
 		newPresentation();
