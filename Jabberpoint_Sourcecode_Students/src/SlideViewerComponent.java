@@ -2,6 +2,7 @@ import java.awt.Font;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Rectangle;
+import java.util.ArrayList;
 import javax.swing.JComponent;
 import javax.swing.JFrame;
 
@@ -17,11 +18,10 @@ import javax.swing.JFrame;
  */
 
 public class SlideViewerComponent extends JComponent {
-		
+
 	private Slide slide; //The current slide
 	private Font labelFont = null; //The font for labels
 	private Presentation presentation = null; //The presentation
-	//private PresentationControl presentationControl = null;
 	private JFrame frame = null;
 
 
@@ -47,18 +47,44 @@ public class SlideViewerComponent extends JComponent {
 		frame.setTitle(presentation.getTitle());
 	}
 
-//Draw the slide
-	public void paintComponent(Graphics g) {
-		g.setColor(SlideViewerStatic.BGCOLOR);
-		g.fillRect(0, 0, getSize().width, getSize().height);
-		if (presentation.getSlideNumber() < 0 || slide == null) {
-			return;
-		}
-		g.setFont(labelFont);
-		g.setColor(SlideViewerStatic.COLOR);
-		g.drawString("Slide " + (1 + presentation.getSlideNumber()) + " of " +
-                 presentation.getSize(), SlideViewerStatic.XPOS, SlideViewerStatic.YPOS);
-		Rectangle area = new Rectangle(0, SlideViewerStatic.YPOS, getWidth(), (getHeight() - SlideViewerStatic.YPOS));
-		slide.draw(g, area, this);
+	public Presentation getPresentation() {
+		return this.presentation;
 	}
+
+	void clear() {
+		presentation.getShowList().clear();
+		setSlideNumber(-1);
+	}
+
+	public void setSlideNumber(int number) {
+		this.presentation.setCurrentSlideNumber(number);
+		this.update(presentation, this.presentation.getCurrentSlide());
+	}
+
+	public void nextSlide() {
+		if (presentation.getSlideNumber() < (presentation.getSize() - 1)) {
+			setSlideNumber(presentation.getSlideNumber() + 1);
+		}
+	}
+
+	public void prevSlide() {
+		if (presentation.getSlideNumber() > 0) {
+			this.setSlideNumber(presentation.getSlideNumber() - 1);
+		}
+	}
+
+//Draw the slide
+public void paintComponent(Graphics g) {
+	g.setColor(SlideViewerStatic.BGCOLOR);
+	g.fillRect(0, 0, getSize().width, getSize().height);
+	if (presentation.getSlideNumber() < 0 || slide == null) {
+		return;
+	}
+	g.setFont(labelFont);
+	g.setColor(SlideViewerStatic.COLOR);
+	g.drawString("Slide " + (1 + presentation.getSlideNumber()) + " of " +
+                 presentation.getSize(), SlideViewerStatic.XPOS, SlideViewerStatic.YPOS);
+	Rectangle area = new Rectangle(0, SlideViewerStatic.YPOS, getWidth(), (getHeight() - SlideViewerStatic.YPOS));
+	slide.draw(g, area, this);
+}
 }

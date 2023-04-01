@@ -25,6 +25,7 @@ public class JabberPoint {
 	public static void main(String[] argv) {
 		Style.createStyles();
 		Presentation presentation = new Presentation();
+		SlideViewerFrame slideViewerFrame = new SlideViewerFrame(JABVERSION, presentation);
 		new SlideViewerFrame(JABVERSION, presentation);
 		try {
 			if (argv.length == 0) { //a demo presentation
@@ -32,7 +33,7 @@ public class JabberPoint {
 			} else {
 				new XMLAccessorLoad().loadFile(presentation, argv[0]);
 			}
-			presentation.setSlideNumber(0);
+			slideViewerFrame.getSlideViewerComponent().setSlideNumber(0);
 		} catch (IOException ex) {
 			JOptionPane.showMessageDialog(null,
 					IOERR + ex, JABERR,
