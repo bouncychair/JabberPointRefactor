@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b5bff6fb-e199-485b-9c4f-5adb3199bff5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AccessorSave.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PresentationControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/XMLAccessorSave.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ActivityDiagram.asta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JabberPoint Refactoring.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../JabberPoint Refactoring.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jabberpoint_Sourcecode_Students/Accessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jabberpoint_Sourcecode_Students/DemoPresentation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jabberpoint_Sourcecode_Students/DemoPresentation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jabberpoint_Sourcecode_Students/JabberPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jabberpoint_Sourcecode_Students/JabberPoint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jabberpoint_Sourcecode_Students/MenuController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jabberpoint_Sourcecode_Students/MenuController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jabberpoint_Sourcecode_Students/MenuController$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jabberpoint_Sourcecode_Students/MenuController$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jabberpoint_Sourcecode_Students/XMLAccessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/savedPresentation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/savedPresentation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Accessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AccessorLoad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DemoPresentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DemoPresentation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JabberPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JabberPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/XMLAccessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/XMLAccessorLoad.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2KIKXqsd2WFb2eEX8lUAcvKlP2w" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Chris/OneDrive - NHL Stenden/Year2/Period 3/Code",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="JabberPoint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JabberPoint" />
+      <module name="Jabberpoint_Sourcecode_Students" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.JabberPoint" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b5bff6fb-e199-485b-9c4f-5adb3199bff5" name="Changes" comment="" />
+      <created>1673656699865</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1673656699865</updated>
+      <workItem from="1673656701202" duration="4626000" />
+      <workItem from="1673697148127" duration="16892000" />
+      <workItem from="1673791236714" duration="595000" />
+      <workItem from="1673819225313" duration="1495000" />
+      <workItem from="1673820768664" duration="694000" />
+      <workItem from="1673821722099" duration="11000" />
+      <workItem from="1674429801858" duration="2015000" />
+      <workItem from="1674484371513" duration="2794000" />
+      <workItem from="1676496953455" duration="191000" />
+      <workItem from="1679347037199" duration="3263000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
