@@ -12,7 +12,7 @@ import java.awt.event.KeyAdapter;
 */
 
 public class KeyController extends KeyAdapter {
-	private SlideViewerComponent slideViewerComponent; //Commands are given to the presentation
+	private SlideViewerComponent slideViewerComponent;
 
 	public KeyController(SlideViewerComponent slideViewerComponent) {
 		this.slideViewerComponent = slideViewerComponent;

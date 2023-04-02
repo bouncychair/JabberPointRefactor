@@ -14,10 +14,8 @@ import java.io.IOException;
  */
 
 public interface AccessorLoad {
-
 	static AccessorLoad getDemoAccessor() {
 		return new DemoPresentation();
 	}
-
 	void loadFile(Presentation p, String fn) throws IOException;
 }

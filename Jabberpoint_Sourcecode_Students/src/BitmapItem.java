@@ -23,7 +23,6 @@ import java.io.IOException;
 public class BitmapItem extends SlideItem {
   private BufferedImage bufferedImage;
   private String imageName;
-  
   protected static final String FILE = "File ";
   protected static final String NOTFOUND = " not found";
 
